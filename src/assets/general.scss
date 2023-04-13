@@ -8,10 +8,22 @@ header{
         text-decoration: none;
     }
     ul{
-        
+        display: flex;
         list-style: none;
     }
 }
 main{
     background-color: $bg-main;
+}
+
+// .myContainer{
+//     display: flex;
+//     justify-content: space-between;
+//     color: $white;
+// }
+
+.navabarMain{
+    background-color: $blue-nav;
+    color:$white
+
 }

@@ -1,7 +1,7 @@
 <template>
-    <div class="myContainer text-black">
+    <div class="myContainer container p-2 d-flex justify-content-center text-black">
         <div class="logo-container">
-            <img src="../assets/img/dc-logo.png" alt="LogoSmall">
+            <img src="../../public/img/dc-logo.png" alt="LogoSmall">
         </div>
         <div class="navbar">
             <ul v-for="(item,i) in listHeader"  > 
