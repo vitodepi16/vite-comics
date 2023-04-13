@@ -1,15 +1,162 @@
+
 <template>
-    <div>
+    <div class=" list-container">
+        <div class="container">
+                <ul v-for="(item,index) in footerList">
+                     <h3>{{ item.title }}</h3>
+                     <li v-for="(list) in item.liList"> {{ list.text}} </li>
+                 </ul>
+                 
+        </div>
+
 
     </div>
 </template>
 
 <script>
-    export default {
-        
+   export default {
+    name: 'FooterComponent',
+    data() {
+        return {
+            footerList: [
+                {
+                    title: 'dc comics',
+                    liList: [
+                        {
+                            text: 'Characters',
+                            url: '#'
+                        },
+                        {
+                            text: 'Comics',
+                            url: '#'
+                        },
+                        {
+                            text: 'Movies',
+                            url: '#'
+                        },
+                        {
+                            text: 'Tv',
+                            url: '#'
+                        },
+                        {
+                            text: 'Games',
+                            url: '#'
+                        },
+                        {
+                            text: 'Videos',
+                            url: '#'
+                        },
+                        {
+                            text: 'News',
+                            url: '#'
+                        }
+                    ]
+                },
+                {
+                    title: 'dc',
+                    liList: [
+                        {
+                            text: 'Terms Of Use',
+                            url: '#'
+                        },
+                        {
+                            text: 'Privacy policy (New)',
+                            url: '#'
+                        },
+                        {
+                            text: 'Ad Choices',
+                            url: '#'
+                        },
+                        {
+                            text: 'Advertising',
+                            url: '#'
+                        },
+                        {
+                            text: 'Jobs',
+                            url: '#'
+                        },
+                        {
+                            text: 'Subscriptions',
+                            url: '#'
+                        },
+                        {
+                            text: 'Talent Workshops',
+                            url: '#'
+                        },
+                        {
+                            text: 'CPSC Certificates',
+                            url: '#'
+                        },
+                        {
+                            text: 'Ratings',
+                            url: '#'
+                        },
+                        {
+                            text: 'Shop Help',
+                            url: '#'
+                        },
+                        {
+                            text: 'Contact Us',
+                            url: '#'
+                        }
+                    ]
+                },
+                {
+                    title: 'sites',
+                    liList: [
+                        {
+                            text: 'DC',
+                            url: '#'
+                        },
+                        {
+                            text: 'MAD Magazine',
+                            url: '#'
+                        },
+                        {
+                            text: 'DC Kids',
+                            url: '#'
+                        },
+                        {
+                            text: 'DC Universe',
+                            url: '#'
+                        },
+                        {
+                            text: 'DC Power Visa',
+                            url: '#'
+                        }
+                    ]
+                },
+                {
+                    title: 'shop',
+                    liList: [
+                        {
+                            text: 'Shop DC',
+                            url: '#'
+                        },
+                        {
+                            text: 'Shop DC Collectibles',
+                            url: '#'
+                        }
+                    ]
+                },
+            ]
+        }
     }
+}
 </script>
 
 <style lang="scss" scoped>
+.list-container{
+background-image: url('../../public/img/footer-bg.jpg');
+margin: 0;
+}
+ul{
+    color: white;
+    margin: 0;
+    list-style: none;
+    li{
+        color: #797979;
+    }
+}
 
 </style>
