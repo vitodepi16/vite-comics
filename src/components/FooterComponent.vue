@@ -5,7 +5,7 @@
             <div class="box-list">
                    <ul v-for="(item,index) in footerList" class="text-uppercase ms-3">
                      <h3>{{ item.title }}</h3>
-                     <li v-for="(list) in item.liList" class="fs-6"> {{ list.text}} </li>
+                     <li v-for="(list) in item.liList" class="fs-6"><a href="">{{ list.text}} </a> </li>
                  </ul>
             </div>
              
@@ -14,10 +14,14 @@
 
 
     </div>
+    <FooterBottom/>
 </template>
 
 <script>
+import FooterBottom from './FooterBottomComponent.vue'
+
    export default {
+    
     name: 'FooterComponent',
     data() {
         return {
@@ -144,8 +148,12 @@
                 },
             ]
         }
+    },
+    components: {
+        FooterBottom
     }
-}
+        }
+
 </script>
 
 <style lang="scss" scoped>
