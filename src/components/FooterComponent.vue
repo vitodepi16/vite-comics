@@ -1,11 +1,14 @@
 
 <template>
     <div class=" list-container">
-        <div class="container">
-                <ul v-for="(item,index) in footerList">
+        <div class="container p-5">
+            <div class="box-list">
+                   <ul v-for="(item,index) in footerList" class="text-uppercase ms-3">
                      <h3>{{ item.title }}</h3>
-                     <li v-for="(list) in item.liList"> {{ list.text}} </li>
+                     <li v-for="(list) in item.liList" class="fs-6"> {{ list.text}} </li>
                  </ul>
+            </div>
+             
                  
         </div>
 
@@ -148,6 +151,7 @@
 <style lang="scss" scoped>
 .list-container{
 background-image: url('../../public/img/footer-bg.jpg');
+background-size: cover;
 margin: 0;
 }
 ul{
@@ -158,5 +162,9 @@ ul{
         color: #797979;
     }
 }
-
+.box-list{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
 </style>

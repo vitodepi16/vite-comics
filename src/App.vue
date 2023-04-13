@@ -5,7 +5,7 @@
   </header>
   <main>
     <MainComponent/>
-    
+
   </main>
   <footer>
     <FooterComponent/>

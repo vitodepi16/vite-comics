@@ -61,6 +61,7 @@ ul{
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 </style>
