@@ -71,10 +71,13 @@
     
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .jumbotron{
-    width: 100%;
-    background-size: cover;
-    
+   height: 350px ;
+    img{
+        width: 100%;
+        height: 100%;
+    }
 }
+
 </style>
