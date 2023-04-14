@@ -1,14 +1,19 @@
 <template>
-    <div class="myContainer container p-2 d-flex justify-content-center text-black">
-        <div class="logo-container">
+    <div class="myContainer  container p-2 d-flex text-black">
+        <div class="logo-container flex-start">
             <img src="../../public/img/dc-logo.png" alt="LogoSmall">
         </div>
-        <div class="navbar">
+        <div class="navbar flex-end">
             <ul v-for="(item,i) in listHeader"  > 
                 <li class="text-uppercase">
                     <a href="item.url">{{ item.text }}</a>
                 </li>
             </ul>
+        </div>
+    </div>
+    <div>
+        <div class="jumbotron">
+            <img src="../../public/img/jumbotron.jpg" alt="">
         </div>
     </div>
 </template>
@@ -67,5 +72,9 @@
 </script>
 
 <style scoped>
-
+.jumbotron{
+    width: 100%;
+    background-size: cover;
+    
+}
 </style>

@@ -1,11 +1,16 @@
 @use './color.scss' as *;
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
 
 header{
+    font-family: 'Oswald', sans-serif;
     background-color: $white;
     a {
         color: $blue-nav;
         text-decoration: none;
+    }
+    a:hover{
+        border-bottom: 2px solid $links-color ;
     }
     ul{
         display: flex;
@@ -14,6 +19,7 @@ header{
 }
 main{
     background-color: $bg-main;
+    font-family: 'Oswald', sans-serif;
 }
 
 .myContainer{
@@ -24,12 +30,16 @@ main{
 
 .navabarMain{
     background-color: $blue-nav;
-    color:$white
-
+    color:$white;
+    font-family: 'Oswald', sans-serif;
 }
 footer{
+    font-family: 'Oswald', sans-serif;
     a {
         color: $links-color;
         text-decoration: none;
     }
+}
+.card{
+    cursor: pointer;
 }
